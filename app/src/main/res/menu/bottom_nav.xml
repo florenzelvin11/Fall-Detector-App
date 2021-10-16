@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/home_page"
+        android:id="@+id/navHome"
+        android:enabled="true"
+        android:icon="@drawable/home" />
+    <item
+        android:title="@string/history_log"
+        android:id="@+id/navHistoryLog"
+        android:enabled="true"
+        android:icon="@drawable/clock" />
+    <item
+        android:title="@string/profile_page"
+        android:id="@+id/navProfile"
+        android:enabled="true"
+        android:icon="@drawable/profile" />
+
+</menu>

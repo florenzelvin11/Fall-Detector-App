@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559240263759",
+    "project_id": "fall-detector-92a6a",
+    "storage_bucket": "fall-detector-92a6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559240263759:android:dabe571c0d1efa4253d23a",
+        "android_client_info": {
+          "package_name": "org.elvincode.fall_detector_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559240263759-dufba7icq4alt4lpvhrjie2llgp5qah6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaZbO-BsRjqNxMCklJWIah-sT9rb-3nQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559240263759-dufba7icq4alt4lpvhrjie2llgp5qah6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

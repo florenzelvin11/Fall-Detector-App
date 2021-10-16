@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishCreatingAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:foreground="@color/black_100_overlay"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smart_watch" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgProfileDp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/RL_sign_up"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProfileDp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileDp"
+        app:layout_constraintTop_toTopOf="@+id/imgProfileDp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputBirthday"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday"
+            app:boxStrokeColor="@drawable/text_field_outline_colour"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTxtBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="DD/MM/YY"
+                android:onClick="btnSetBirthday"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputGender"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:layout_below="@+id/inputBirthday"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTxtGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/colour_cursor"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputHealthCondition"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Condition"
+            android:layout_below="@+id/inputGender"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTxtHealthCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/colour_cursor"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Almost Done..."
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/RL_sign_up"
+        app:layout_constraintEnd_toEndOf="@+id/RL_sign_up"
+        app:layout_constraintStart_toStartOf="@+id/RL_sign_up"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/RL_sign_up"
+        app:layout_constraintStart_toStartOf="@+id/RL_sign_up"
+        app:layout_constraintTop_toBottomOf="@+id/RL_sign_up"
+        app:layout_constraintVertical_bias="0.07999998"
+        android:textColor="@color/black_100_overlay"
+        android:onClick="btnFinish"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnSetProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Set Profile Pic"
+        android:textColor="@color/black_100_overlay"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgProfileDp"
+        app:layout_constraintStart_toStartOf="@+id/imgProfileDp"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileDp"
+        app:layout_constraintVertical_bias="0.050000012"
+        android:onClick="btnSetProfileDp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

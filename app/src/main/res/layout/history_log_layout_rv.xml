@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black_100"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_100"
+            android:padding="0dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="07-Jul.-2021 12:43:46 pm"
+            android:layout_gravity="center_vertical|center_horizontal"
+            />
+
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_100"
+            android:layout_marginHorizontal="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txtFallState"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Fall State"
+            />
+
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_100"
+            android:layout_marginHorizontal="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="41 Allom St, Ropes Crossing NSW 2760, Australia"
+            android:paddingRight="7dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <RelativeLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/black_100"
+            android:padding="0dp"
+            />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black_100"
+        />
+
+</TableLayout>
